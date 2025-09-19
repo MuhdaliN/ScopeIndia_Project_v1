@@ -1,0 +1,478 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Scope India</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.ico' %}" rel="icon">
+  <link href="{% static 'img/AIdro_lx2CEri1CasXn8KP4Y4VPbwrhBFqSzG1HEDnfngjar_Sc=s68-c-k-c0x00ffffff-no-rj.jpeg' %}"
+    rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+  <link href="{% static 'css/slider.css' %}" rel="stylesheet">
+  
+ 
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{%url 'home'%}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{% static 'img/AIdro_lx2CEri1CasXn8KP4Y4VPbwrhBFqSzG1HEDnfngjar_Sc=s88-c-k-c0x00ffffff-no-rj.jpeg' %}"
+          rel="apple-touch-icon">
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Scope India</h1>
+        <p class="model_paragraph">
+          Center for Software, Networking, & Cloud Education
+        </p>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{%url 'home'%}" class="active">Home<br></a></li>
+          <li><a href="{%url 'about'%}">About us</a></li>
+          <li><a href="{%url 'contact'%}">Contact us</a></li>
+          <li><a href="{%url 'register'%}">Registration</a></li>
+          <li><a href="{%url 'login'%}">Login</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="{% static 'img/about-page-title-bg.jpg' %}" alt="" data-aos="fade-in">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4">
+            <h1 data-aos="fade-up">SCOPE INDIA, your career partner!</h1>
+            <blockquote data-aos="fade-up" data-aos-delay="100">
+              <p>One of India's best Training destinations for Software, Networking, and Cloud Computing courses with 17
+                years of Industrial experience.</h4>
+              <p>Software, Networking, and Cloud Professional Education Centre in Kerala and Tamil Nadu from Suffix E
+                Solutions with WORKING PROFESSIONALS oriented on-the-job TRAINING model. SCOPE INDIA provides courses
+                for Software Programming in Python (Data Science | Artificial Intelligence | Machine Learning | Deep
+                Learning, Data Analytics), Java, PHP, .Net, MERN,Software Testing Manual and Automation, Cloud Computing
+                (AWS | Azure), Server Administration (MicroSoft MCSE | Linux RHCE), Networking (CCNA), DevOps, Mobile
+                App Development in Flutter, and Digital Marketing. A Training with a 100% Trusted Job-Based Internship
+                Model. SCOPE INDIA has a Strong Placement Cell that provides jobs to thousands of students annually. We
+                assure you, you won't regret it after training from SCOPE INDIA!
+
+                This is how SCOPE INDIA can support both newbies and those experienced in the industry to upgrade their
+                skills.</p>
+            </blockquote>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <a href="{% url 'about'%}" class="btn-get-started">Get Started</a>
+              <a href="{% static 'img/videoplayback.mp4' %}"
+                class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
+                  Video</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+    <section id="features" class="features section">
+      <div class="slider-container">
+        <ul class="slider">
+          <li>
+            <a href="https://scopeindia.org/devops-certification-cloud-administrator-internship-course">
+              <img src="{% static 'img/courses/Devops-training-scopeindia.jpg' %}"
+                alt="SCOPE INDIA Full Stack Course Offer" class="">
+            </a>
+          </li>
+          <li>
+            <a href="https://scopeindia.org/dot-net-core-mvc-mssql-full-stack-advanced-internship-course">
+              <img src="{% static 'img/courses/scope-india-dotnet-core-full-stack-course.jpg' %}"
+                alt="SCOPE INDIA .Net Core Full Stack Course" class="">
+            </a>
+          </li>
+          <li>
+            <a href="https://scopeindia.org/android-ios-mobile-app-google-flutter-course" >
+              <img src="{% static 'img/courses/scope-india-flutter-fullstack-course.jpg' %}"
+                alt="SCOPE INDIA Flutter Full Stack Course" class="">
+            </a>
+          </li>
+          <li>
+            <a href="https://scopeindia.org/aws-certification-solutions-architect-associate-internship-course">
+              <img src="{% static 'img/courses/scope-india-aws-certification-course-(1).jpg' %}"
+                alt="SCOPE INDIA AWS Certification Course" class="">
+            </a>
+          </li>
+          <li>
+            <a href="https://scopeindia.org/azure-certification-cloud-administrator-internship-course">
+              <img src="{% static 'img/courses/scope-india-azure-certification-course.jpg' %}"
+                alt="SCOPE INDIA Azure Certification Course" class="">
+            </a>
+          </li>
+          <li>
+            <a href="https://scopeindia.org/php-codeigniter-laravel-mysql-full-stack-advanced-internship-course">
+              <img src="{% static 'img/courses/scope-india-php-full-stack-course (1).jpg' %}"
+                alt="SCOPE INDIA PHP Full Stack Course" class="">
+            </a>
+          </li>
+          <li>
+            <a href="https://scopeindia.org/software-testing-manual-automation-advanced-internship-course">
+              <img src="{% static 'img/courses/scope-india-software-testing-manual-automation-course.jpg' %}"
+                alt="SCOPE INDIA Software Testing Manual and Automation Testing Course"
+                class="">
+            </a>
+          </li>
+          <li>
+            <a href="https://scopeindia.org/networking-server-cloud-computing-internship-course">
+              <img src="{% static 'img/courses/scope-india-network-server-administration-course (1).jpg' %}"
+                alt="SCOPE INDIA Networking (CCNA) and Server Administration (RHCE, MCSE, AWS, Azure) Course"
+                class="">
+            </a>
+          </li>
+          <li>
+            <a href="https://scopeindia.org/java-spring-mysql-full-stack-advanced-internship-course">
+              <img src="{% static 'img/courses/scope-india-java-full-stack-course (1).jpg' %}"
+                alt="SCOPE INDIA Java Full Stack Course" class="">
+            </a>
+          </li>
+          <li>
+            <a href="https://scopeindia.org/digital-marketing-course-internship" >
+              <img src="{% static 'img/courses/scope-india-digital-marketing-course.jpg' %}"
+                alt="SCOPE INDIA Digital Marketing Course" class="">
+            </a>
+          </li>
+          <li>
+            <a href="https://scopeindia.org/python-django-sqlite-mysql-full-stack-advanced-internship-course">
+              <img src="{% static 'img/courses/scope-india-python-full-stack-course (1).jpg' %}"
+                alt="SCOPE INDIA Python Full Stack Course" class="">
+            </a>
+          </li>
+          <li>
+            <a href="https://scopeindia.org/mern-mongodb-expressjs-reactjs-nodejs-full-stack-advanced-internship-course">
+              <img src="{% static 'img/courses/scope-india-mean-mern-stack-course.jpg' %}"
+                alt="SCOPE INDIA MEAN & MERN Stack Course" class="">
+            </a>
+          </li>
+        </ul>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+
+        <!-- Pagination Dots -->
+        <div class="slider_pager"></div>
+      </div>
+    </div>  
+  </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <div class="container">
+
+        <div class="row g-0">
+
+          <div class="col-xl-5 img-bg" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'img/why-us-bg.jpg' %}" alt="">
+          </div>
+
+          <div class="col-xl-7 slides position-relative" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "centeredSlides": true,
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "navigation": {
+                    "nextEl": ".swiper-button-next",
+                    "prevEl": ".swiper-button-prev"
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Course</h3>
+                    <h4 class="mb-3">Software Programming Courses</h4>
+                    <p>All Trainers at SCOPE INDIA are working professionals, Software Engineers, Networking Engineers,
+                      and Software Test Engineers of Suffix E Solutions with
+                      17 years of Industrial experience.</p>
+                  </div>
+                </div><!-- End slide item -->
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Course</h3>
+                    <h4 class="mb-3">Software Testing Courses</h4>
+                    <p>All Trainers at SCOPE INDIA are working professionals, Software Engineers, Networking Engineers,
+                      and Software Test Engineers of Suffix E Solutions with
+                      17 years of Industrial experience.</p>
+                  </div>
+                </div><!-- End slide item -->
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Course</h3>
+                    <h4 class="mb-3">Networking, Server, & Cloud</h4>
+                    <p>All Trainers at SCOPE INDIA are working professionals, Software Engineers, Networking Engineers,
+                      and Software Test Engineers of Suffix E Solutions with
+                      17 years of Industrial experience.</p>
+                  </div>
+                </div>
+                <!-- End slide item -->
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Course</h3>
+                    <h4 class="mb-3">Other Courses</h4>
+                    <p>All Trainers at SCOPE INDIA are working professionals, Software Engineers, Networking Engineers,
+                      and Software Test Engineers of Suffix E Solutions with
+                      17 years of Industrial experience.</p>
+                  </div>
+                </div><!-- End slide item -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <img src="{% static 'img/5star.png' %}" style="max-width: 100%;height: auto;width: 30%;">
+        <p class="text-center">Google 4.9 * Rated Institute</p>
+        <h2>Experience SKILL</h2>
+        <p>STUDENTS ARE GETTING PLACED EVERY YEAR</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
+            <div>
+              <h4 class="title">Training</h4>
+              <p class="description">You are trained under Suffix E Solutions working professionals, on-the-job training
+                model.</p>
+              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
+            <div>
+              <h4 class="title">Internship</h4>
+              <p class="description"> After course completion, you will be proceeded to live projects with a 6 months
+                experience certificate.</p>
+              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
+            <div>
+              <h4 class="title">Grooming</h4>
+              <p class="description">CV Preparation, Interview Preparation, and Personality Development.</p>
+              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div>
+            <div>
+              <h4 class="title">Placement</h4>
+              <p class="description">Gives 100% FREE placement support to all our fellow techies through SCOPE INDIA's
+                Placement Cell.</p>
+              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high" style="color: #f5cf13;"></i></div>
+            <div>
+              <h4 class="title">1000+ and 95%</h4>
+              <p class="description">STUDENTS ARE TRAINED EVERY YEAR.</p>
+              <p>STUDENTS ARE GETTING PLACED EVERY YEAR.</p>
+              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div>
+            <div>
+              <h4 class="title">30+</h4>
+              <p class="description">COMPUTER COURSES</p>
+              <a href="{% url 'courses'%}" class="readmore stretched-link"><span>Learn More</span><i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="{% static 'img/cta-bg.jpg'%}" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Call To Action</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.</p>
+              <a class="cta-btn" href="#">Call To Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-about">
+            <a href="{%url 'home'%}" class="logo d-flex align-items-center">
+              <span><img
+                  src="{% static 'img/AIdro_lx2CEri1CasXn8KP4Y4VPbwrhBFqSzG1HEDnfngjar_Sc=s68-c-k-c0x00ffffff-no-rj.jpeg' %}"
+                  rel="apple-touch-icon"></span>
+              <span class="sitename">Scope India</span>
+            </a>
+            <p>Center for Software, Networking, & Cloud Education</p>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">contact</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <div class="col-md-2"><a class="footer_links" href="tel:+919745936073">9745936073 (TPK) </a></div>
+            <div class="col-md-2"><a class="footer_links" href="tel:+919745936073">9745936073 (TVM) </a></div>
+            <div class="col-md-2"><a class="footer_links" href="tel:+917592939481">7592939481 (EKM) </a></div>
+            <div class="col-md-2"><a class="footer_links" href="tel:+918075536185">8075536185 (NGL) </a></div>
+            <div class="col-md-2"><a class="footer_links" target="_blank" href="mailto:info@scopeindia.org"
+                style="outline: none;">info@scopeindia.org</a></div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container copyright text-center" style="background-color: rgba(23, 40, 59, 0.9);color: white;">
+      <div class="image_wrapper">
+        <img class="scale-with-grid" src="{% static 'img/scope-india-logo-home-page.png'%}">
+      </div>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Scope India</strong> <span>All Rights Reserved</span>
+      </p>
+      <img class="scale-with-grid" alt="An ISO 9001:2015, IAS &amp; IFS Certified Company"
+        title="An ISO 9001:2015, IAS &amp; IAF Certified Company" src="{% static 'img/iso_iaflogo.png' %}" width="400"
+        height="100">
+      <p style="text-align:center;">An ISO 9001:2015 Certified Company</p>
+      <p style="text-align:center;">All Rights Reserved <a class="footer_links" target="_blank"
+          href="https://www.suffixesolutions.com/" title="A trusted IT Partner"> Suffix E Solutions </a>&copy; 2007-2023
+      </p>
+      <div class="row">
+
+      </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/slider.js' %}"></script>
+
+</body>
+
+</html>

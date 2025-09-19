@@ -1,0 +1,80 @@
+.login-container {
+    background: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color:#333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: rgb(218, 24, 24);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #28da63;
+    color: black;
+}
+
+.forgot-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(0, 119, 255);
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+.remember-me {
+    text-align: left;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 8px;
+}
+
+.remember-me label {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #fff;
+}

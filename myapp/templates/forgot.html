@@ -1,0 +1,195 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>first - Scope India</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="{% static 'img/favicon.ico' %}" rel="icon">
+    <link href="{% static 'img/AIdro_lx2CEri1CasXn8KP4Y4VPbwrhBFqSzG1HEDnfngjar_Sc=s68-c-k-c0x00ffffff-no-rj.jpeg' %}"
+        rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+</head>
+
+<body class="portfolio-page">
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+            <a href="{%url 'home'%}" class="logo d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img
+                    src="{% static 'img/AIdro_lx2CEri1CasXn8KP4Y4VPbwrhBFqSzG1HEDnfngjar_Sc=s88-c-k-c0x00ffffff-no-rj.jpeg' %}">
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1 class="sitename">Scope India</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="{%url 'home'%}" class="active">Home<br></a></li>
+                    <li><a href="{%url 'about'%}">About us</a></li>
+                    <li><a href="{%url 'contact'%}">Contact us</a></li>
+                    <li><a href="{%url 'register'%}">Registration</a></li>
+                    <li><a href="{%url 'login'%}">Login</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+        </div>
+    </header>
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade">
+        <div class="container">
+          <h1>Forgot Password</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="{%url 'login'%}">login</a></li>
+              <li class="current">Forgot Password/li>
+            </ol>
+          </nav>
+        </div>
+      </div><!-- End Page Title -->
+
+    <section class="vh-100 gradient-custom">
+        <form action="{%url 'forgot'%}" method="post">
+            {% csrf_token %}
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                            <div class="card-body p-5 text-center">
+
+                                <div class="mb-md-5 mt-md-4 pb-5">
+
+                                    <h2 style="color: azure;padding: 30px;">Email via OTP</h2>
+
+
+                                    <div data-mdb-input-init class="form-outline form-white mb-4">
+                                        <input name='emails' type="email" id="typeEmailX" class="form-control form-control-lg" />
+                                        <label class="form-label" for="typeEmailX" style="color: aliceblue; padding: 30px;"value="{{ request.COOKIES.logged_in_user }}" required>Email</label>
+                                    </div>
+
+                                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-light btn-lg px-5" type="submit">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>  
+        </form>
+    </section>
+
+
+
+    
+        
+
+        <footer id="footer" class="footer light-background">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-5 col-md-12 footer-about">
+                        <a href="{%url 'home'%}" class="logo d-flex align-items-center">
+                            <img
+                                src="{% static 'img/AIdro_lx2CEri1CasXn8KP4Y4VPbwrhBFqSzG1HEDnfngjar_Sc=s88-c-k-c0x00ffffff-no-rj.jpeg' %}">
+                            <span class="sitename">Scope India</span>
+                        </a>
+                        <p>This is how SCOPE INDIA can support both newbies and those experienced in the industry to
+                            upgrade their skills.
+
+                        </p>
+                        <div class="social-links d-flex mt-4">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                        <h4>Contact Us</h4>
+                        <div class="col-md-2"><a class="footer_links" href="tel:+919745936073">9745936073 (TPK) </a>
+                        </div>
+                        <div class="col-md-2"><a class="footer_links" href="tel:+919745936073">9745936073 (TVM) </a>
+                        </div>
+                        <div class="col-md-2"><a class="footer_links" href="tel:+917592939481">7592939481 (EKM) </a>
+                        </div>
+                        <div class="col-md-2"><a class="footer_links" href="tel:+918075536185">8075536185 (NGL) </a>
+                        </div>
+                        <div class="col-md-2"><a class="footer_links" target="_blank" href="mailto:info@scopeindia.org"
+                                style="outline: none;">info@scopeindia.org</a></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container copyright text-center" style="background-color: rgba(23, 40, 59, 0.9);color: white;">
+            <div class="image_wrapper">
+              <img class="scale-with-grid" src="{% static 'img/scope-india-logo-home-page.png'%}">
+          </div>
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Scope India</strong> <span>All Rights Reserved</span></p>
+            <img class="scale-with-grid" alt="An ISO 9001:2015, IAS &amp; IFS Certified Company" title="An ISO 9001:2015, IAS &amp; IAF Certified Company" src="{% static 'img/iso_iaflogo.png' %}" width="400" height="100">
+            <p style="text-align:center;">An ISO 9001:2015 Certified Company</p>
+                                                <p style="text-align:center;">All Rights Reserved <a class="footer_links" target="_blank"  href="https://www.suffixesolutions.com/" title="A trusted IT Partner"> Suffix E Solutions </a>&copy; 2007-2023</p>
+                                                <div class="row">
+            
+          </div>z
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+    <!-- Main JS File -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

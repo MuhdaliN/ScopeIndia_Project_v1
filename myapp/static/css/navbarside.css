@@ -1,0 +1,123 @@
+.enroll-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.enroll-btn:hover {
+    background-color: #0056b3;
+}
+
+.user-menu {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    margin-right: -155px;
+    margin-top: -15px;
+}
+
+/* Default avatar size for desktop */
+.user-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Larger avatar for smaller screens if needed */
+@media (max-width: 768px) {
+    .user-avatar {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Dropdown positioning - appears below the avatar */
+.user-dropdown {
+    display: none;
+    position: absolute;
+    top: 110%; /* Slightly below the image */
+    right: 100px;
+    background: rgb(4, 15, 77);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    min-width: 300px;
+    z-index: 1000;
+    overflow: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show dropdown when active */
+.user-menu.active .user-dropdown {
+    display: block;
+}
+
+/* Dropdown links */
+.user-dropdown a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    transition: background-color 0.3s;
+}
+
+.user-dropdown a i {
+    margin-right: 8px;
+}
+
+.user-dropdown a:hover {
+    background: #f5f5f5;
+    color:black
+}
+
+/* Info section inside dropdown */
+.user-info {
+    padding: 10px;
+    background: #00c1fc;
+    border-bottom: 1px solid #eeff01;
+    color: #000;
+    text-align: left;
+}
+
+.username {
+    font-weight: bold;
+    margin: 0;
+    font-size: 18px;
+}
+
+.user-email {
+    margin: 0;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Ensure the menu aligns better on smaller screens */
+@media (max-width: 768px) {
+    .user-dropdown {
+        right: -5px; /* Slight adjustment for smaller screens */
+        min-width: 180px;
+        margin-top: 50px;
+
+    }
+    .user-avatar {
+        width: 80px;
+        height: 80px;
+}
+    .user_menu{
+        margin-right: 0;
+        margin-top: 0;
+}
+}
